@@ -1,0 +1,27 @@
+{
+  "name": "test_ui",
+  "version": "1.0.0",
+  "description": "lista de exercicio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pfaffenbach/S206L1.git"
+  },
+  "author": "Erich  Pfaffenbach",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pfaffenbach/S206L1/issues"
+  },
+  "homepage": "https://github.com/Pfaffenbach/S206L1#readme",
+  "dependencies": {
+    "cypress": "^8.7.0"
+  },
+  "devDependencies": {
+    "mochawesome": "^6.3.1",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0"
+  }
+}
