@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body class="p-3">
+    <form class="was-validated">
+        <div class="mt-3 mb-3">
+            <label for="inNome" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="inNome" name="inNome" placeholder="Nome" required>
+        </div>
+        
+        <div class="valid-feedback">Validado</div>
+        <div class="invalid-feedback">Favor preencher este campo</div>
+    </form>
+
+    <div class="mt-3">
+        <label for="inSobrenome" class="form-label">Sobrenome</label>
+        <input type="text" class="form-control" id="inSobrenome" name="inSobrenome" placeholder="Sobrenome">
+    </div>
+
+    <div class="mt-5">
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+    </div>
+
+    <div class="mt-3">
+        <label class="form-label">Estado Civil</label>
+
+        <div class="form-check">
+            <input class="form-check-input" id="inEC1" type="radio" value="solteiro" requireds>
+            <label class="form-check-label" for="inEC1">Solteiro</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" id="inEC2" type="radio" value="casado">
+            <label class="form-check-label" for="inEC2">Casado</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" id="inEC3" type="radio" value="divorciado">
+            <label class="form-check-label" for="inEC3">Divorciado</label>
+        </div>
+    </div>
+
+    <div class="mt-3">
+        <label class="form-label">Habilidades</label>
+
+        <div class="form-check">
+            <input class="form-check-input" id="inHab1" name="inHab1" type="checkbox" value="html">
+            <label class="form-check-label" for="inHab1">HTML</label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" id="inHab2" name="inHab2" type="checkbox" value="css">
+            <label class="form-check-label" for="inHab2">CSS</label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" id="inHab3" name="inHab3" type="checkbox" value="js">
+            <label class="form-check-label" for="inHab3">JavaScript</label>
+        </div>
+    </div>
+
+    <div class="mt-3">
+        <label class="form-label" form="inEscolaridade">Escolaridade</label>
+
+        <select class="form-select" name="inEscolaridade" id="inEscolaridade" placeholder="Selecione" required>
+            <option value="">--selecione--</option>
+            <option value="ensino-medio">Ensino Medio</option>
+            <option value="superior">Superior</option>
+            <option value="pos-graduacao">Pós-Graduação</option>
+            <option value="mestrado">Mestrado</option>
+            <option value="doutorado">Doutorado</option>
+        </select>
+
+        <div class="valid-feedback">Validado</div>
+        <div class="invalid-feedback">Favor selecionar uma opção</div>
+    </div>
+</body>
+
+</html>

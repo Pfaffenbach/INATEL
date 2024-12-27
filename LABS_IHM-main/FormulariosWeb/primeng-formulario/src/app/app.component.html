@@ -1,0 +1,54 @@
+<div class="card p-5">
+  <h3>Cadastro de Pessoa Física</h3>
+
+  <div class="field col-6">
+    <label for="inNome">Nome</label>
+    <input id="inNome" type="text" pInputText [(ngModel)]="nome" class="w-full">
+  </div>
+
+  <div class="field col-6">
+    <label for="inSobrenome">Sobrenome</label>
+    <input id="inSobrenome" type="text" pInputText [(ngModel)]="sobrenome" class="w-full">
+  </div>
+
+  <div class="field col-12">
+    <label>Estado Civil</label>
+
+    <ng-container *ngFor="let ecVar of estadoCivilArray">
+      <div class="field-checkbox">
+        <p-radioButton [inputId]="ecVar.chave" name="inEstadoCivil" [value]="ecVar"
+          [(ngModel)]="estadoCivilSelecionado"></p-radioButton>
+        <label [for]="ecVar.chave">{{ecVar.valor}}</label>
+      </div>
+    </ng-container>
+  </div>
+
+  <div class="field col-12">
+    <label>Habilidades</label>
+
+    <div class="field-checkbox">
+      <p-checkbox name="inHab" value="html" [(ngModel)]="habilidadeSelecionadas" inputId="inHab1"></p-checkbox>
+      <label for="inHab1">HTML</label>
+    </div>
+    <div class="field-checkbox">
+      <p-checkbox name="inHab" value="css" [(ngModel)]="habilidadeSelecionadas" inputId="inHab2"></p-checkbox>
+      <label for="inHab2">CSS</label>
+    </div>
+    <div class="field-checkbox">
+      <p-checkbox name="inHab" value="js" [(ngModel)]="habilidadeSelecionadas" inputId="inHab3"></p-checkbox>
+      <label for="inHab3">JavaScript</label>
+    </div>
+
+  </div>
+
+  <div class="field col-12">
+    <label for="inEscolar">Escolaridade</label>
+
+    <p-dropdown id="inEscolar" [options]="escolaridadeArray" [(ngModel)]="escolaridadeSelecionada"
+      optionLabel="descricao" placeholder="Selecione uma escolaridade" styleClass="w-full"></p-dropdown>
+
+  </div>
+
+  <p-button label="Cadastrar" (onClick)="cadastrar()"></p-button>
+
+</div>

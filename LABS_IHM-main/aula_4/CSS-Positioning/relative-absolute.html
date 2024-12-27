@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .parent {
+            position: relative;
+            width: 700px;
+            height: 500px;
+            border: 6px solid purple;
+        }
+
+        .child {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background: red;
+        }
+
+        .child1 {
+            top: 100px;
+            left: 50px;
+        }
+
+        .child2 {
+            right: 50px;
+            bottom: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <h1>Sou a div pai</h1>
+
+        <div class="child child1">
+            <h2>Sou a div filha 1</h2>
+        </div>
+
+        <div class="child child2">
+            <h2>Sou a div filha 2</h2>
+        </div>
+    </div>
+</body>
+
+</html>
